@@ -27,33 +27,32 @@ const itemVariants = {
 const services = [
   {
     id: "01",
-    title: "Web Development",
-    description: "Modern web products with fast interfaces, clean architecture, and room to scale.",
+    title: "Deal & Scope Capture",
+    description: "Capture structured project scope during sales: features, milestones, estimates, assumptions, and timeline.",
   },
   {
     id: "02",
-    title: "AI Solutions",
-    description: "Useful AI workflows that automate repeatable work and support better decisions.",
+    title: "Delivery Tracking",
+    description: "Track execution vs plan: milestone status, progress, delays, and blockers in real-time.",
   },
   {
     id: "03",
-    title: "Data Analytics",
-    description: "Dashboards and pipelines that turn business data into confident action.",
+    title: "Scope Change Management",
+    description: "Log and monetize changes: change requests, effort impact, cost impact, approval, and billing status.",
   },
   {
     id: "04",
-    title: "IoT Monitoring",
-    description: "Connected systems for real-time visibility, alerts, and operational control.",
+    title: "Project Financials",
+    description: "Live project economics: planned revenue, delivered value, billed amount, cost, and margin tracking.",
   },
 ];
 
 const features = [
-  "Performance-led engineering",
-  "Secure architecture",
-  "Clear product strategy",
-  "Scalable delivery",
-  "Business-focused metrics",
-  "Long-term support",
+  "Protect margins",
+  "Stop free work",
+  "Align sales & delivery",
+  "Improve billing",
+  "Increase repeat revenue",
 ];
 
 export default function Home() {
@@ -82,19 +81,19 @@ export default function Home() {
             variants={itemVariants}
             className="mb-5 inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#a7f3e1]"
           >
-            PairScale Tech
+            Software Project CRM
           </motion.p>
           <motion.h1
             className="mx-auto max-w-4xl text-4xl font-display font-bold leading-tight text-white sm:text-6xl lg:text-7xl"
             variants={itemVariants}
           >
-            Build sharper digital systems for the next stage of growth.
+            A CRM built specifically for software companies.
           </motion.h1>
           <motion.p
             className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl"
             variants={itemVariants}
           >
-            We help teams turn web, AI, analytics, and connected operations into practical technology that feels refined, reliable, and ready to scale.
+            Connect sales, project delivery, scope, and revenue in one system. Manage the entire lifecycle of software projects — from deal to delivery to revenue.
           </motion.p>
           <motion.div
             className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row"
@@ -118,23 +117,47 @@ export default function Home() {
       </motion.section>
 
       <Section className="bg-[#f6f9fc]" animate={false}>
-        <div className="mx-auto mb-12 flex max-w-3xl flex-col items-center gap-4 text-center">
+        <motion.div
+          className="mx-auto mb-12 flex max-w-3xl flex-col items-center gap-4 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+        >
           <div>
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.16em] text-[#0d9488]">
-              What we build
-            </p>
-            <h2 className="max-w-2xl text-3xl font-display font-bold text-[#10294b] sm:text-4xl">
-              Complete technology support across product, data, and operations.
-            </h2>
+            <motion.p
+              className="mb-3 text-sm font-bold uppercase tracking-[0.16em] text-[#0d9488]"
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.1 }}
+            >
+              Core Modules
+            </motion.p>
+            <motion.h2
+              className="max-w-2xl text-3xl font-display font-bold text-[#10294b] sm:text-4xl"
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.2 }}
+            >
+              Everything you need to manage software projects end-to-end.
+            </motion.h2>
           </div>
-          <Link
-            to="/solutions"
-          className="inline-flex w-fit items-center justify-center rounded-lg bg-[#10294b] px-5 py-3 text-sm font-semibold text-white shadow-elevation-2 transition hover:bg-[#1b5aa2]"
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.3 }}
           >
-            View all solutions
-          </Link>
-        </div>
-
+            <Link
+              to="/solutions"
+              className="inline-flex w-fit items-center justify-center rounded-lg bg-[#10294b] px-5 py-3 text-sm font-semibold text-white shadow-elevation-2 transition hover:bg-[#1b5aa2]"
+            >
+              View all solutions
+            </Link>
+          </motion.div>
+        </motion.div>
         <motion.div
           className="grid gap-6 md:grid-cols-2 lg:grid-cols-4"
           variants={containerVariants}
@@ -163,17 +186,35 @@ export default function Home() {
       </Section>
 
       <Section className="bg-white" animate={false}>
-        <div className="mx-auto mb-12 max-w-3xl text-center">
-          <p className="mb-3 text-sm font-bold uppercase tracking-[0.16em] text-[#0d9488]">
-            Why teams choose us
-          </p>
+        <motion.div
+          className="mx-auto mb-12 max-w-3xl text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <motion.p
+            className="mb-3 text-sm font-bold uppercase tracking-[0.16em] text-[#0d9488]"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+          >
+            Value Proposition
+          </motion.p>
           <h2 className="text-3xl font-display font-bold text-[#10294b] sm:text-4xl">
-            Premium work is calm, clear, and dependable.
+            Stop losing money on software projects.
           </h2>
-          <p className="mt-4 leading-7 text-slate-600">
-            We keep delivery focused on the parts that make products feel better in real use: speed, structure, security, and measurable business value.
-          </p>
-        </div>
+          <motion.p
+            className="mt-4 leading-7 text-slate-600"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.3 }}
+          >
+            Connect sales, scope, delivery, and billing in one system. Prevent scope creep, align teams, and maximize margins on every project.
+          </motion.p>
+        </motion.div>
 
         <motion.div
           className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
@@ -198,25 +239,44 @@ export default function Home() {
       </Section>
 
       <Section className="bg-[#081827] text-white" animate={false}>
-        <div className="rounded-lg border border-white/10 bg-white/[0.06] p-6 shadow-[0_22px_56px_rgba(8,24,39,0.28)] backdrop-blur sm:p-8">
+        <motion.div
+          className="rounded-lg border border-white/10 bg-white/[0.06] p-6 shadow-[0_22px_56px_rgba(8,24,39,0.28)] backdrop-blur sm:p-8"
+          initial={{ opacity: 0, y: 30, scale: 0.95 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        >
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-            <div className="text-center">
+            <motion.div
+              className="text-center"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
               <h2 className="text-3xl font-display font-bold">
-                Ready to shape your next digital system?
+                Ready to transform your software projects?
               </h2>
               <p className="mx-auto mt-3 max-w-2xl leading-7 text-slate-300">
-                Bring us the business goal. We will help translate it into a practical, polished technology roadmap.
+                Join software agencies using our CRM to protect margins, align teams, and turn every deal into profitable delivery.
               </p>
-            </div>
-            <Link
-              to="/contact"
-              className="inline-flex w-fit items-center justify-center rounded-lg bg-[#14b8a6] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#0d9488]"
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
             >
-              Contact us
-              <span className="ml-2" aria-hidden="true">-&gt;</span>
-            </Link>
+              <Link
+                to="/contact"
+                className="inline-flex w-fit items-center justify-center rounded-lg bg-[#14b8a6] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#0d9488]"
+              >
+                Contact us
+                <span className="ml-2" aria-hidden="true">-&gt;</span>
+              </Link>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </Section>
     </Layout>
   );

@@ -42,20 +42,8 @@ const reasons = [
   },
 ];
 
-const benefits = [
-  { label: "PAY", title: "Competitive Salary", description: "Compensation designed to recognize strong craft and ownership." },
-  { label: "CARE", title: "Health Insurance", description: "Health and wellness coverage for long-term sustainability." },
-  { label: "LEARN", title: "Learning Budget", description: "Support for courses, books, and skill development." },
-  { label: "HYBRID", title: "Remote Options", description: "Flexible work arrangements for focused delivery." },
-  { label: "TEAM", title: "Team Events", description: "Regular moments to connect, review, and celebrate." },
-  { label: "PTO", title: "Vacation Days", description: "Time away to rest properly and return sharp." },
-];
-
 const jobs = [
-  { position: "Senior Full Stack Developer", location: "San Francisco, CA", type: "Full time" },
-  { position: "AI/ML Engineer", location: "Remote", type: "Full time" },
-  { position: "UX/UI Designer", location: "Austin, TX", type: "Contract" },
-  { position: "Product Manager", location: "San Francisco, CA", type: "Full time" },
+  { position: "LinkedIn Outreach Sales Intern", location: "55-75$", type: "Internship" },
 ];
 
 export default function Careers() {
@@ -131,43 +119,6 @@ export default function Careers() {
         </motion.div>
       </Section>
 
-      <Section className="bg-white" animate={false}>
-        <div className="mx-auto mb-12 flex max-w-3xl flex-col items-center gap-4 text-center">
-          <div>
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.16em] text-[#0d9488]">
-              Benefits
-            </p>
-            <h2 className="max-w-2xl text-3xl font-display font-bold text-[#10294b] sm:text-4xl">
-              Support that helps people do strong work sustainably.
-            </h2>
-          </div>
-        </div>
-
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
-        >
-          {benefits.map((benefit) => (
-            <motion.div
-              key={benefit.title}
-              variants={itemVariants}
-              className="rounded-lg border border-slate-200 bg-[#f8fafc] p-6 text-center shadow-[0_12px_30px_rgba(15,23,42,0.05)]"
-            >
-              <div className="mb-4 text-xs font-bold uppercase tracking-[0.16em] text-[#0d9488]">
-                {benefit.label}
-              </div>
-              <h3 className="mb-2 text-lg font-display font-bold text-[#10294b]">
-                {benefit.title}
-              </h3>
-              <p className="text-sm leading-6 text-slate-600">{benefit.description}</p>
-            </motion.div>
-          ))}
-        </motion.div>
-      </Section>
-
       <Section className="bg-[#f6f9fc]" animate={false}>
         <div className="mx-auto mb-10 max-w-3xl text-center">
           <p className="mb-3 text-sm font-bold uppercase tracking-[0.16em] text-[#0d9488]">
@@ -198,16 +149,35 @@ export default function Careers() {
                   <h3 className="text-xl font-display font-bold text-[#10294b]">
                     {job.position}
                   </h3>
-                  <p className="mt-2 text-sm text-slate-600">
-                    {job.location} - {job.type}
-                  </p>
+                  <div className="mt-3 flex flex-col items-center gap-2">
+                    <div className="inline-flex items-center gap-2 rounded-full bg-[#14b8a6]/10 px-4 py-2">
+                      <span className="text-2xl font-bold text-[#14b8a6]">55-75$</span>
+                      {/* <span className="text-sm font-medium text-slate-700">per hour</span> */}
+                    </div>
+                    <p className="text-sm text-slate-600 mb-3">
+                      {job.type}
+                    </p>
+                    <div className="text-left bg-slate-50 rounded-lg p-4 max-w-sm w-full">
+                      <p className="text-xs font-semibold text-slate-700 mb-2">Key Responsibilities:</p>
+                      <ul className="text-xs text-slate-600 space-y-1 mb-3">
+                        <li>• LinkedIn outreach to software agencies</li>
+                        <li>• Lead research and qualification</li>
+                        <li>• Schedule discovery calls and demos</li>
+                        <li>• Track activities in CRM system</li>
+                      </ul>
+                      <p className="text-xs font-semibold text-slate-700 mb-1">About Us:</p>
+                      <p className="text-xs text-slate-600">Building CRM for software agencies to protect margins and align sales with delivery.</p>
+                      <p className="text-xs font-semibold text-slate-700 mt-3">Contact:</p>
+                      <p className="text-xs text-slate-600">sravyajakkula11@gmail.com</p>
+                    </div>
+                  </div>
                 </div>
-                <Link
-                  to="/contact"
+                <a
+                  href="mailto:sravyajakkula11@gmail.com?subject=Application for LinkedIn Outreach Sales Intern&body=Hi, I'm interested in the LinkedIn Outreach Sales Intern position."
                   className="inline-flex w-full items-center justify-center rounded-lg bg-[#10294b] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#1b5aa2] sm:w-auto"
                 >
                   Apply
-                </Link>
+                </a>
               </div>
             </motion.div>
           ))}

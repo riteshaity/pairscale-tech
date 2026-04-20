@@ -27,60 +27,60 @@ const itemVariants = {
 const solutions = [
   {
     id: 1,
-    title: "Web Development",
-    description: "Fast, resilient web products with clear user flows, scalable frontends, and production-ready backend foundations.",
+    title: "Deal & Scope Capture",
+    description: "Capture structured project scope during sales: features, milestones, estimates, assumptions, and timeline.",
     icon: "01",
     accent: "from-[#2f8ee8] to-[#1b5aa2]",
-    items: ["Product websites", "Dashboards", "API integrations"],
+    items: ["Feature breakdown", "Milestone planning", "Cost estimation"],
   },
   {
     id: 2,
-    title: "AI Solutions",
-    description: "Applied AI workflows that reduce manual effort, improve decisions, and fit naturally inside existing operations.",
+    title: "Delivery Tracking",
+    description: "Track execution vs plan: milestone status, progress, delays, and blockers in real-time.",
     icon: "02",
     accent: "from-[#14b8a6] to-[#1f70c7]",
-    items: ["Automation", "Assistants", "Prediction systems"],
+    items: ["Progress monitoring", "Timeline tracking", "Blocker alerts"],
   },
   {
     id: 3,
-    title: "Data Analytics",
-    description: "Reliable analytics layers that turn scattered business data into practical insight for teams and leaders.",
+    title: "Scope Change Management",
+    description: "Log and monetize changes: change requests, effort impact, cost impact, approval, and billing status.",
     icon: "03",
     accent: "from-[#0d9488] to-[#115e59]",
-    items: ["BI reporting", "Data pipelines", "Executive metrics"],
+    items: ["Change requests", "Impact assessment", "Approval workflow"],
   },
   {
     id: 4,
-    title: "IoT Solutions",
-    description: "Connected monitoring platforms for devices, sensors, alerts, and real-time operational visibility.",
+    title: "Project Financials",
+    description: "Live project economics: planned revenue, delivered value, billed amount, cost, and margin tracking.",
     icon: "04",
     accent: "from-[#e89b0c] to-[#0d9488]",
-    items: ["Device tracking", "Live alerts", "Fleet visibility"],
+    items: ["Revenue tracking", "Cost monitoring", "Margin analysis"],
   },
 ];
 
 const strengths = [
   {
-    label: "FAST",
-    title: "High Performance",
-    description: "Interfaces and services are tuned for speed, smooth interaction, and reliable growth.",
+    label: "MARGIN",
+    title: "Protect Profits",
+    description: "Track every change, bill for scope creep, and show real project economics.",
   },
   {
-    label: "SAFE",
-    title: "Security First",
-    description: "Architecture decisions account for access control, data protection, and operational resilience.",
+    label: "ALIGN",
+    title: "Team Coordination",
+    description: "Connect sales promises with delivery reality, so everyone knows scope and budget.",
   },
   {
-    label: "CLEAR",
-    title: "Business Aligned",
-    description: "Every feature is mapped to a practical outcome, so delivery stays focused and measurable.",
+    label: "SCALE",
+    title: "Repeat Revenue",
+    description: "Manage client relationships, upsell opportunities, and expansion projects.",
   },
 ];
 
 const stats = [
-  { value: "4", label: "Core practices" },
-  { value: "24/7", label: "Monitoring mindset" },
-  { value: "100%", label: "Scalable delivery" },
+  { value: "7", label: "Core modules" },
+  { value: "100%", label: "Project lifecycle" },
+  { value: "End-to-end", label: "Revenue tracking" },
 ];
 
 export default function Solutions() {
@@ -108,13 +108,13 @@ export default function Solutions() {
             className="mx-auto max-w-4xl"
           >
             <p className="mb-5 inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#a7f3e1]">
-              Solutions built for scale
+              Software Project CRM
             </p>
             <h1 className="mx-auto mb-6 max-w-3xl text-4xl font-display font-bold leading-tight text-white sm:text-6xl">
-              Technology systems that feel sharp, stable, and ready for growth.
+              Complete project management for software agencies.
             </h1>
             <p className="mx-auto max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
-              We design and build digital platforms across web, AI, analytics, and connected operations with a focus on clarity, performance, and long-term value.
+              From deal to delivery to revenue — one CRM that manages the entire lifecycle of software projects.
             </p>
           </motion.div>
 
@@ -143,10 +143,10 @@ export default function Solutions() {
         <div className="mx-auto mb-12 flex max-w-3xl flex-col items-center gap-4 text-center">
           <div>
             <p className="mb-3 text-sm font-bold uppercase tracking-[0.16em] text-[#0d9488]">
-              Capabilities
+              Core Modules
             </p>
             <h2 className="max-w-2xl text-3xl font-display font-bold text-[#10294b] sm:text-4xl">
-              Focused service lines, connected by one delivery standard.
+              Everything software agencies need to manage projects profitably.
             </h2>
           </div>
           <Link
@@ -219,7 +219,7 @@ export default function Solutions() {
       <Section className="bg-white" animate={false}>
           <div className="mx-auto mb-12 max-w-3xl text-center">
             <p className="mb-3 text-sm font-bold uppercase tracking-[0.16em] text-[#0d9488]">
-              Delivery quality
+              Why Our CRM
             </p>
           <motion.h2
             initial={{ opacity: 1, y: 18 }}
@@ -227,10 +227,10 @@ export default function Solutions() {
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl font-display font-bold text-[#10294b]"
           >
-            Why Choose Our Solutions?
+            Built for software project businesses.
           </motion.h2>
             <p className="mt-4 text-base leading-7 text-slate-600">
-              Premium delivery is less about noise and more about disciplined decisions, clean execution, and dependable systems.
+              Unlike generic CRMs, ours understands that software deals become complex projects with scope, delivery, and financial tracking.
             </p>
           </div>
 
@@ -266,10 +266,10 @@ export default function Solutions() {
             <div className="flex flex-col items-center gap-6 text-center">
               <div>
                 <h3 className="text-2xl font-display font-bold">
-                  Need a solution designed around your business?
+                  Ready to manage software projects like a pro?
                 </h3>
                 <p className="mx-auto mt-2 max-w-2xl text-sm leading-6 text-slate-300">
-                  Share your goals and we will help shape the right web, AI, data, or IoT roadmap.
+                  See how our CRM can protect your margins and align your sales and delivery teams.
                 </p>
               </div>
               <Link

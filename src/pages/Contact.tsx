@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import Layout from "../components/layout/Layout";
 import Section from "../components/ui/Section";
@@ -28,37 +27,21 @@ const contactCards = [
   {
     label: "EMAIL",
     title: "Email",
-    value: "contact@pairscale.com",
+    value: "pairscaletech@gmail.com",
   },
-  {
-    label: "PHONE",
-    title: "Phone",
-    value: "+1 (555) 123-4567",
-  },
+  // {
+  //   label: "PHONE",
+  //   title: "Phone",
+  //   value: "+1 (555) 123-4567",
+  // },
   {
     label: "VISIT",
     title: "Address",
-    value: "123 Tech Street, Silicon Valley, CA",
+    value: "T-Hub, Raidurgam, Knowledge City Rd, Hyderabad, Telangana 500032",
   },
 ];
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log(formData);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
 
   return (
     <Layout>
@@ -101,7 +84,7 @@ export default function Contact() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="mb-12 grid gap-6 md:grid-cols-3"
+          className="mb-12 grid gap-6 md:grid-cols-2"
         >
           {contactCards.map((card) => (
             <motion.div
@@ -147,22 +130,21 @@ export default function Contact() {
             initial={{ opacity: 1, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="rounded-lg border border-slate-200/80 bg-white p-6 text-center shadow-[0_18px_44px_rgba(15,23,42,0.08)] sm:p-8 lg:p-10"
+            className="rounded-lg border border-slate-200/80 bg-white p-6 text-center shadow-[0_18px_44px_rgba(15,23,42,0.08)] sm:p-5 lg:p-5"
           >
             <h2 className="mb-8 text-2xl font-display font-bold text-[#10294b] sm:text-3xl">
               Send us a message
             </h2>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form action="https://api.web3forms.com/submit" method="POST" className="space-y-6">
+              <input type="hidden" name="access_key" value="d3b89573-19eb-4795-855c-008399e54003" />
               <div>
                 <label className="mb-2 block text-center font-semibold text-slate-700">Name</label>
                 <input
                   type="text"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
                   className="w-full rounded-lg border border-slate-300 px-4 py-3 text-center transition focus:border-[#14b8a6] focus:outline-none focus:ring-4 focus:ring-[#14b8a6]/15"
-                  placeholder="Your name"
+                  placeholder="Your name" required
                 />
               </div>
 
@@ -171,10 +153,8 @@ export default function Contact() {
                 <input
                   type="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   className="w-full rounded-lg border border-slate-300 px-4 py-3 text-center transition focus:border-[#14b8a6] focus:outline-none focus:ring-4 focus:ring-[#14b8a6]/15"
-                  placeholder="your@email.com"
+                  placeholder="your@email.com" required
                 />
               </div>
 
@@ -183,10 +163,8 @@ export default function Contact() {
                 <input
                   type="text"
                   name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
                   className="w-full rounded-lg border border-slate-300 px-4 py-3 text-center transition focus:border-[#14b8a6] focus:outline-none focus:ring-4 focus:ring-[#14b8a6]/15"
-                  placeholder="How can we help?"
+                  placeholder="How can we help?" required
                 />
               </div>
 
@@ -194,11 +172,9 @@ export default function Contact() {
                 <label className="mb-2 block text-center font-semibold text-slate-700">Message</label>
                 <textarea
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   rows={6}
                   className="w-full resize-none rounded-lg border border-slate-300 px-4 py-3 text-center transition focus:border-[#14b8a6] focus:outline-none focus:ring-4 focus:ring-[#14b8a6]/15"
-                  placeholder="A little context about your project..."
+                  placeholder="A little context about your project..." required
                 />
               </div>
 
@@ -221,3 +197,19 @@ export default function Contact() {
     </Layout>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -27,31 +27,31 @@ const itemVariants = {
 const values = [
   {
     label: "01",
-    title: "Clear Thinking",
-    description: "We reduce complexity before writing code, so teams understand what is being built and why.",
+    title: "Project-First Design",
+    description: "Built for how software agencies actually work — deals that become projects, not just sales.",
   },
   {
     label: "02",
-    title: "Reliable Delivery",
-    description: "We design for maintainability, performance, and the everyday realities of production systems.",
+    title: "Margin Protection",
+    description: "Every feature designed to prevent scope creep, track changes, and show real project economics.",
   },
   {
     label: "03",
-    title: "Business Fit",
-    description: "Every solution is shaped around outcomes, not only technical novelty.",
+    title: "Team Alignment",
+    description: "Connect sales promises with delivery reality, so everyone knows scope, timeline, and budget.",
   },
 ];
 
 const founders = [
   {
-    name: "Aity Ritesh Raj",
-    role: "Co-founder, CTO",
-    initials: "AR",
-  },
-  {
     name: "Jakkula Sravya",
     role: "Co-founder, CEO",
     initials: "JS",
+  },
+  {
+    name: "Aity Ritesh Raj",
+    role: "Co-founder, CTO",
+    initials: "AR",
   },
   {
     name: "Liam Adams",
@@ -84,13 +84,13 @@ export default function About() {
             className="mx-auto max-w-4xl"
           >
             <p className="mb-5 inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#a7f3e1]">
-              About PairScale
+              About PairScale Tech
             </p>
             <h1 className="mx-auto mb-6 max-w-3xl text-4xl font-display font-bold leading-tight text-white sm:text-6xl">
-              A technology partner for ambitious, practical teams.
+              Building the CRM software companies actually need.
             </h1>
             <p className="mx-auto max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
-              PairScale Technology blends strategy, engineering, and product judgment to help organizations build systems that are useful today and durable tomorrow.
+              We saw the disconnect between sales, delivery, and revenue in software agencies. So we built a CRM that manages the entire project lifecycle — from deal to delivery to profit.
             </p>
           </motion.div>
         </div>
@@ -106,16 +106,16 @@ export default function About() {
         >
           <motion.div variants={itemVariants}>
             <p className="mb-3 text-sm font-bold uppercase tracking-[0.16em] text-[#0d9488]">
-              Who we are
+              Our Mission
             </p>
             <h2 className="mb-6 text-3xl font-display font-bold text-[#10294b] sm:text-4xl">
-              We turn complicated digital goals into systems people can trust.
+              Solving the software project management crisis.
             </h2>
             <p className="mb-4 text-lg leading-8 text-slate-600">
-              PairScale is built for teams that need more than implementation. We help shape the right product direction, then deliver clean web, AI, data, and IoT solutions.
+              Small software companies lose money on projects because sales, scope, delivery, and billing live in disconnected tools. We built Software Project CRM to connect everything in one system.
             </p>
             <p className="text-lg leading-8 text-slate-600">
-              Our work is intentionally disciplined: focused scope, readable architecture, refined interfaces, and solutions that can keep evolving.
+              Our product continues after the deal closes — tracking delivery, managing changes, and showing real project economics so agencies can protect margins and scale profitably.
             </p>
           </motion.div>
 
@@ -125,12 +125,12 @@ export default function About() {
             transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] as const }}
             className="rounded-lg border border-slate-200/80 bg-white p-7 text-center shadow-[0_12px_34px_rgba(15,23,42,0.06)] transition-all sm:p-9"
           >
-            <div className="text-5xl font-display font-bold text-[#10294b]">150+</div>
+            <div className="text-5xl font-display font-bold text-[#10294b]">50+</div>
             <p className="mt-3 text-lg font-semibold text-slate-700">
-              Projects delivered across industries
+              Software agencies using our CRM
             </p>
             <div className="mt-7 space-y-4 border-t border-slate-100 pt-6">
-              {["Enterprise Solutions", "Innovative Technology", "Dedicated Support"].map((item) => (
+              {["Scope Protection", "Margin Tracking", "Delivery Alignment"].map((item) => (
                 <div key={item} className="flex items-center justify-center gap-3 text-slate-700">
                   <span className="h-2 w-2 rounded-full bg-[#14b8a6]" />
                   {item}
@@ -144,13 +144,13 @@ export default function About() {
       <Section className="bg-[#f6f9fc]" animate={false}>
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <p className="mb-3 text-sm font-bold uppercase tracking-[0.16em] text-[#0d9488]">
-            Leadership
+            Our Team
           </p>
           <h2 className="text-3xl font-display font-bold text-[#10294b] sm:text-4xl">
-            Meet the people shaping PairScale.
+            Founders with software agency experience.
           </h2>
           <p className="mt-4 leading-7 text-slate-600">
-            Our founding team brings product direction, technical depth, and operational focus together.
+            We've built software products and run agencies. We know the pain of disconnected tools and lost margins.
           </p>
         </div>
 
@@ -186,10 +186,10 @@ export default function About() {
       <Section className="bg-white" animate={false}>
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <p className="mb-3 text-sm font-bold uppercase tracking-[0.16em] text-[#0d9488]">
-            How we work
+            Our Approach
           </p>
           <h2 className="text-3xl font-display font-bold text-[#10294b] sm:text-4xl">
-            Principles that keep delivery premium.
+            Principles that make our CRM different.
           </h2>
         </div>
 
@@ -225,10 +225,10 @@ export default function About() {
           <div className="flex flex-col items-center gap-6 text-center md:items-center md:justify-center">
             <div>
               <h2 className="text-3xl font-display font-bold">
-                Let us help shape your next solution.
+                Ready to stop losing money on software projects?
               </h2>
               <p className="mx-auto mt-3 max-w-2xl leading-7 text-slate-300">
-                We bring structure, product thinking, and engineering depth to the table.
+                Join the software agencies protecting margins and scaling profitably with our CRM.
               </p>
             </div>
             <Link

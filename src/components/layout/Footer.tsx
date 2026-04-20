@@ -8,9 +8,9 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  { name: "LinkedIn", icon: "in" },
-  { name: "Twitter", icon: "X" },
-  { name: "GitHub", icon: "GH" },
+  { name: "LinkedIn", icon: "in", url: "https://www.linkedin.com/company/pairscale-tech/" },
+  { name: "Twitter", icon: "X", url: "#" },
+  { name: "GitHub", icon: "GH", url: "#" },
 ];
 
 const Footer = () => {
@@ -83,7 +83,9 @@ const Footer = () => {
               {socialLinks.map((social) => (
                 <motion.a
                   key={social.name}
-                  href="#"
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={social.name}
                   whileHover={{ scale: 1.06, y: -2 }}
                   whileTap={{ scale: 0.96 }}
@@ -99,7 +101,7 @@ const Footer = () => {
         <div className="h-px bg-gradient-to-r from-transparent via-white/25 to-transparent my-8" />
 
         <div className="flex flex-col items-center justify-center gap-4 text-center text-sm text-gray-300 md:flex-row">
-          <p>Copyright {currentYear} PairScale Tech. All rights reserved.</p>
+          <p>Copyright © {currentYear} PairScale Tech | All rights reserved |</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-[#a7f3e1] transition">
               Privacy Policy
