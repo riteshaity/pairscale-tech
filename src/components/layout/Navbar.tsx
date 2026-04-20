@@ -1,7 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
   const navLinks = [
@@ -88,6 +90,14 @@ const Navbar = () => {
             </motion.div>
           ))}
         </motion.div>
+        <div className="md:hidden">
+  <button
+    onClick={() => setIsOpen(!isOpen)}
+    className="text-white text-2xl"
+  >
+    {isOpen ? "✕" : "☰"}
+  </button>
+</div>
 
         {/* CTA Button */}
         <motion.div
@@ -103,8 +113,33 @@ const Navbar = () => {
             Get Started
           </Link>
         </motion.div>
+        
 
       </div>
+      {isOpen && (
+  <div className="md:hidden absolute top-full left-0 w-full bg-[#081827] border-t border-white/10 flex flex-col items-center py-6 gap-6 shadow-lg z-40">
+    
+    {navLinks.map((link) => (
+      <Link
+        key={link.name}
+        to={link.path}
+        onClick={() => setIsOpen(false)}
+        className="text-white text-sm font-medium"
+      >
+        {link.name}
+      </Link>
+    ))}
+
+    <Link
+      to="/contact"
+      onClick={() => setIsOpen(false)}
+      className="bg-gradient-to-r from-[#1f70c7] to-[#0d9488] px-5 py-2 rounded-lg text-white font-semibold"
+    >
+      Get Started
+    </Link>
+
+  </div>
+)}
     </motion.nav>
   );
 };
