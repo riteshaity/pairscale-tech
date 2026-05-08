@@ -173,7 +173,7 @@ export default function Careers() {
                   </div>
                 </div>
                 <a
-                  href="mailto:sravyajakkula11@gmail.com?subject=Application for LinkedIn Outreach Sales Intern&body=Hi, I'm interested in the LinkedIn Outreach Sales Intern position."
+                  href="mailto:aityriteshraj2@gmail.com?subject=Application for LinkedIn Outreach Sales Intern&body=Hi, I'm interested in the LinkedIn Outreach Sales Intern position."
                   className="inline-flex w-full items-center justify-center rounded-lg bg-[#10294b] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#1b5aa2] sm:w-auto"
                 >
                   Apply
