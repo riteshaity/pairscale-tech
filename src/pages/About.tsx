@@ -43,19 +43,19 @@ const values = [
 ];
 
 const founders = [
-  {
-    name: "Jakkula Sravya",
-    role: "Co-founder, CEO",
-    initials: "JS",
-  },
+  // {
+  //   name: "Jakkula Sravya",
+  //   role: "Co-founder, CEO",
+  //   initials: "JS",
+  // },
   {
     name: "Aity Ritesh Raj",
-    role: "Co-founder, CTO",
+    role: "Co-founder, CEO",
     initials: "AR",
   },
   {
     name: "Liam Adams",
-    role: "COO",
+    role: "Co-founder, CTO",
     initials: "LA",
   },
 ];
