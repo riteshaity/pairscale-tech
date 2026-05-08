@@ -168,7 +168,7 @@ export default function Careers() {
                       <p className="text-xs font-semibold text-slate-700 mb-1">About Us:</p>
                       <p className="text-xs text-slate-600">Building CRM for software agencies to protect margins and align sales with delivery.</p>
                       <p className="text-xs font-semibold text-slate-700 mt-3">Contact:</p>
-                      <p className="text-xs text-slate-600">sravyajakkula11@gmail.com</p>
+                      <p className="text-xs text-slate-600">aityriteshraj2@gmail.com</p>
                     </div>
                   </div>
                 </div>
