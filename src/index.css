@@ -27,33 +27,24 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0;
 }
 
-/* Premium typography */
-h1 {
-  @apply text-4xl md:text-5xl lg:text-6xl;
-}
-
-h2 {
-  @apply text-3xl md:text-4xl;
-}
-
-h3 {
-  @apply text-2xl;
-}
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-gray-100;
+  @apply bg-[#081827];
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-gray-300 rounded-full hover:bg-gray-400;
+  background: linear-gradient(to bottom, #2f8ee8, #14b8a6);
+  border-radius: 999px;
 }
 
-/* Ensure custom properties are available */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #57aef7, #2dd4b8);
+}
+
 @layer utilities {
   .shadow-elevation-1 {
     box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
@@ -63,5 +54,27 @@ h3 {
   }
   .shadow-elevation-3 {
     box-shadow: 0 26px 64px rgba(15, 23, 42, 0.18);
+  }
+
+  /* Gradient text utilities */
+  .text-gradient-primary {
+    background: linear-gradient(135deg, #57aef7, #2dd4b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .text-gradient-blue {
+    background: linear-gradient(135deg, #2f8ee8, #0d9488);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glow ring for CTA buttons */
+  .btn-glow-teal {
+    box-shadow: 0 16px 38px rgba(13, 148, 136, 0.35);
+  }
+  .btn-glow-teal:hover {
+    box-shadow: 0 20px 48px rgba(13, 148, 136, 0.50);
   }
 }
