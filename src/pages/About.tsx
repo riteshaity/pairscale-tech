@@ -70,9 +70,9 @@ const founders = [
     description: "Architecting the platform, engineering culture, and technical roadmap.",
   },
   {
-    name: "Liam Adams",
+    name: "Anand Tandi",
     role: "COO",
-    initials: "LA",
+    initials: "AT",
     gradient: "from-[#0d9488] to-[#2f8ee8]",
     description: "Driving operations, client partnerships, and delivery excellence at scale.",
   },
